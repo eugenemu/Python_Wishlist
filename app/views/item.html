@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+  </head>
+  <body>
+    <div id="topNav">
+    	<a href="/items/dashboard">Home</a>
+    	<a href="/users/logout">Logout</a>
+    </div>
+    {% for i in item %}
+    <p>{{i['item']}}</p>
+    {% endfor %}
+    <p>Users who added this product/item under their wish list:</p>
+    
+    {% for user in users %}
+    <ul>
+        <li>{{user['username']}}</li>
+    </ul>
+    {% endfor %}
+  </body>
+</html>

@@ -1,3 +1,41 @@
 * {
   font-family: monaco;
 }
+
+/*INDEX CSS*/
+
+#register, #login {
+	width: 300px;
+	outline: 1px solid black;
+	display: inline-block;
+	vertical-align: top;
+}
+
+	#register label, #login label {
+		display: block;
+		text-align: right;
+	}
+
+	#register button, #login button {
+		float: right;
+	}
+
+/*DASHBOARD CSS*/
+#topNav {
+	width: 600px;
+	outline: 1px solid black;
+}
+
+#myWishList, #otherWishList {
+	min-height: 300px; width: 500px;
+	outline: 1px solid black;
+}
+
+table, th, td {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+td {
+	padding: 0px 25px;
+}

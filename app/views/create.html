@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+  </head>
+  <body>
+    <div id="topNav">
+    	<a href="/items/dashboard">Home</a>
+    	<a href="/users/logout">Logout</a>
+    </div>
+    Create a New Wish List Item
+    <form action="/items/add", method="POST">
+        Item/Product: <input type="text" name="item">
+        <button>Add</button>
+        {% with message = get_flashed_messages() %}
+            {% if message %}
+                {% for i in message %}
+                    <p>{{i}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </form>
+  </body>
+</html>
